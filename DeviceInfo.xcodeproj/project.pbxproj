@@ -7,19 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49ABA77B25CA970500AF52C2 /* Courgette-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49ABA77A25CA970500AF52C2 /* Courgette-Regular.ttf */; };
+		49ABA77C25CA970500AF52C2 /* Courgette-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49ABA77A25CA970500AF52C2 /* Courgette-Regular.ttf */; };
+		49ABA78225CA983C00AF52C2 /* DateBatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5CBB225CA6BF200C6F054 /* DateBatteryView.swift */; };
+		49ABA78325CA983D00AF52C2 /* DateBatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5CBB225CA6BF200C6F054 /* DateBatteryView.swift */; };
+		49ABA78C25CA9AFD00AF52C2 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABA78B25CA9AFD00AF52C2 /* Battery.swift */; };
+		49ABA78D25CA9AFD00AF52C2 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABA78B25CA9AFD00AF52C2 /* Battery.swift */; };
+		49ABA79A25CAA3F400AF52C2 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABA79925CAA3F400AF52C2 /* TimeView.swift */; };
+		49ABA79B25CAA3F400AF52C2 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABA79925CAA3F400AF52C2 /* TimeView.swift */; };
+		49ABA79F25CAA47900AF52C2 /* VTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABA79E25CAA47900AF52C2 /* VTimeView.swift */; };
+		49ABA7A025CAA47900AF52C2 /* VTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABA79E25CAA47900AF52C2 /* VTimeView.swift */; };
 		49E5CB6925CA642800C6F054 /* DeviceInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5CB6825CA642800C6F054 /* DeviceInfoApp.swift */; };
 		49E5CB6B25CA642800C6F054 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5CB6A25CA642800C6F054 /* ContentView.swift */; };
 		49E5CB6D25CA642900C6F054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E5CB6C25CA642900C6F054 /* Assets.xcassets */; };
 		49E5CB7025CA642900C6F054 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E5CB6F25CA642900C6F054 /* Preview Assets.xcassets */; };
+		49E5CB7F25CA645B00C6F054 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E5CB7E25CA645B00C6F054 /* WidgetKit.framework */; };
+		49E5CB8125CA645B00C6F054 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E5CB8025CA645B00C6F054 /* SwiftUI.framework */; };
+		49E5CB8425CA645B00C6F054 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5CB8325CA645B00C6F054 /* Widgets.swift */; };
+		49E5CB8625CA645C00C6F054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E5CB8525CA645C00C6F054 /* Assets.xcassets */; };
+		49E5CB8A25CA645C00C6F054 /* WidgetsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 49E5CB7C25CA645B00C6F054 /* WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		49E5CBA325CA677E00C6F054 /* DateBatteryWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5CB9825CA66A700C6F054 /* DateBatteryWidgetView.swift */; };
+		49E5CBA825CA678300C6F054 /* ColorfulDateBatteryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5CB9225CA64F800C6F054 /* ColorfulDateBatteryWidget.swift */; };
+		49E5CBBB25CA768100C6F054 /* DateBatteryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5CBAB25CA6A6700C6F054 /* DateBatteryData.swift */; };
+		49E5CBBE25CA768100C6F054 /* DateBatteryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5CBAB25CA6A6700C6F054 /* DateBatteryData.swift */; };
+		49F39F4D25CAD396003F5A4A /* DateBatteryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F39F4C25CAD396003F5A4A /* DateBatteryProvider.swift */; };
+		49F39F5325CAD447003F5A4A /* BlueDateBatteryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F39F5225CAD447003F5A4A /* BlueDateBatteryWidget.swift */; };
+		49F39F5825CAD9F2003F5A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E5CB8525CA645C00C6F054 /* Assets.xcassets */; };
+		49F39F5C25CADC9E003F5A4A /* WidgetPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F39F5B25CADC9E003F5A4A /* WidgetPreviewView.swift */; };
+		49F39F6825CB084B003F5A4A /* BatteryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F39F6725CB084B003F5A4A /* BatteryService.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		49E5CB8825CA645C00C6F054 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49E5CB5D25CA642800C6F054 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49E5CB7B25CA645B00C6F054;
+			remoteInfo = WidgetsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49E5CB8E25CA645C00C6F054 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				49E5CB8A25CA645C00C6F054 /* WidgetsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		49ABA77A25CA970500AF52C2 /* Courgette-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Courgette-Regular.ttf"; sourceTree = "<group>"; };
+		49ABA78B25CA9AFD00AF52C2 /* Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
+		49ABA79925CAA3F400AF52C2 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		49ABA79E25CAA47900AF52C2 /* VTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTimeView.swift; sourceTree = "<group>"; };
 		49E5CB6525CA642800C6F054 /* DeviceInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E5CB6825CA642800C6F054 /* DeviceInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoApp.swift; sourceTree = "<group>"; };
 		49E5CB6A25CA642800C6F054 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49E5CB6C25CA642900C6F054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49E5CB6F25CA642900C6F054 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49E5CB7125CA642900C6F054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E5CB7C25CA645B00C6F054 /* WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E5CB7E25CA645B00C6F054 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		49E5CB8025CA645B00C6F054 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		49E5CB8325CA645B00C6F054 /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
+		49E5CB8525CA645C00C6F054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49E5CB8725CA645C00C6F054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E5CB9225CA64F800C6F054 /* ColorfulDateBatteryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulDateBatteryWidget.swift; sourceTree = "<group>"; };
+		49E5CB9825CA66A700C6F054 /* DateBatteryWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateBatteryWidgetView.swift; sourceTree = "<group>"; };
+		49E5CBAB25CA6A6700C6F054 /* DateBatteryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateBatteryData.swift; sourceTree = "<group>"; };
+		49E5CBB225CA6BF200C6F054 /* DateBatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateBatteryView.swift; sourceTree = "<group>"; };
+		49F39F4C25CAD396003F5A4A /* DateBatteryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateBatteryProvider.swift; sourceTree = "<group>"; };
+		49F39F5225CAD447003F5A4A /* BlueDateBatteryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueDateBatteryWidget.swift; sourceTree = "<group>"; };
+		49F39F5B25CADC9E003F5A4A /* WidgetPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetPreviewView.swift; sourceTree = "<group>"; };
+		49F39F6725CB084B003F5A4A /* BatteryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,13 +96,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		49E5CB7925CA645B00C6F054 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E5CB8125CA645B00C6F054 /* SwiftUI.framework in Frameworks */,
+				49E5CB7F25CA645B00C6F054 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49ABA77925CA96C400AF52C2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				49ABA77A25CA970500AF52C2 /* Courgette-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		49ABA78A25CA9AED00AF52C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49ABA78B25CA9AFD00AF52C2 /* Battery.swift */,
+				49ABA79925CAA3F400AF52C2 /* TimeView.swift */,
+				49ABA79E25CAA47900AF52C2 /* VTimeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		49E5CB5C25CA642800C6F054 = {
 			isa = PBXGroup;
 			children = (
 				49E5CB6725CA642800C6F054 /* DeviceInfo */,
+				49E5CB8225CA645B00C6F054 /* Widgets */,
+				49E5CB7D25CA645B00C6F054 /* Frameworks */,
 				49E5CB6625CA642800C6F054 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				49E5CB6525CA642800C6F054 /* DeviceInfo.app */,
+				49E5CB7C25CA645B00C6F054 /* WidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +150,7 @@
 			children = (
 				49E5CB6825CA642800C6F054 /* DeviceInfoApp.swift */,
 				49E5CB6A25CA642800C6F054 /* ContentView.swift */,
+				49F39F5B25CADC9E003F5A4A /* WidgetPreviewView.swift */,
 				49E5CB6C25CA642900C6F054 /* Assets.xcassets */,
 				49E5CB7125CA642900C6F054 /* Info.plist */,
 				49E5CB6E25CA642900C6F054 /* Preview Content */,
@@ -69,6 +166,42 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		49E5CB7D25CA645B00C6F054 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49E5CB7E25CA645B00C6F054 /* WidgetKit.framework */,
+				49E5CB8025CA645B00C6F054 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49E5CB8225CA645B00C6F054 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				49E5CB9125CA647800C6F054 /* DateBattery */,
+				49E5CB8325CA645B00C6F054 /* Widgets.swift */,
+				49E5CB8525CA645C00C6F054 /* Assets.xcassets */,
+				49ABA77925CA96C400AF52C2 /* Fonts */,
+				49E5CB8725CA645C00C6F054 /* Info.plist */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		49E5CB9125CA647800C6F054 /* DateBattery */ = {
+			isa = PBXGroup;
+			children = (
+				49ABA78A25CA9AED00AF52C2 /* View */,
+				49E5CB9225CA64F800C6F054 /* ColorfulDateBatteryWidget.swift */,
+				49F39F5225CAD447003F5A4A /* BlueDateBatteryWidget.swift */,
+				49E5CB9825CA66A700C6F054 /* DateBatteryWidgetView.swift */,
+				49E5CBAB25CA6A6700C6F054 /* DateBatteryData.swift */,
+				49E5CBB225CA6BF200C6F054 /* DateBatteryView.swift */,
+				49F39F4C25CAD396003F5A4A /* DateBatteryProvider.swift */,
+				49F39F6725CB084B003F5A4A /* BatteryService.swift */,
+			);
+			path = DateBattery;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +212,34 @@
 				49E5CB6125CA642800C6F054 /* Sources */,
 				49E5CB6225CA642800C6F054 /* Frameworks */,
 				49E5CB6325CA642800C6F054 /* Resources */,
+				49E5CB8E25CA645C00C6F054 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				49E5CB8925CA645C00C6F054 /* PBXTargetDependency */,
 			);
 			name = DeviceInfo;
 			productName = DeviceInfo;
 			productReference = 49E5CB6525CA642800C6F054 /* DeviceInfo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		49E5CB7B25CA645B00C6F054 /* WidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E5CB8B25CA645C00C6F054 /* Build configuration list for PBXNativeTarget "WidgetsExtension" */;
+			buildPhases = (
+				49E5CB7825CA645B00C6F054 /* Sources */,
+				49E5CB7925CA645B00C6F054 /* Frameworks */,
+				49E5CB7A25CA645B00C6F054 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetsExtension;
+			productName = WidgetsExtension;
+			productReference = 49E5CB7C25CA645B00C6F054 /* WidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +251,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					49E5CB6425CA642800C6F054 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					49E5CB7B25CA645B00C6F054 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
@@ -117,6 +272,7 @@
 			projectRoot = "";
 			targets = (
 				49E5CB6425CA642800C6F054 /* DeviceInfo */,
+				49E5CB7B25CA645B00C6F054 /* WidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -126,8 +282,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49ABA77B25CA970500AF52C2 /* Courgette-Regular.ttf in Resources */,
 				49E5CB7025CA642900C6F054 /* Preview Assets.xcassets in Resources */,
+				49F39F5825CAD9F2003F5A4A /* Assets.xcassets in Resources */,
 				49E5CB6D25CA642900C6F054 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E5CB7A25CA645B00C6F054 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49ABA77C25CA970500AF52C2 /* Courgette-Regular.ttf in Resources */,
+				49E5CB8625CA645C00C6F054 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,12 +305,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49ABA78C25CA9AFD00AF52C2 /* Battery.swift in Sources */,
+				49ABA78225CA983C00AF52C2 /* DateBatteryView.swift in Sources */,
+				49ABA79F25CAA47900AF52C2 /* VTimeView.swift in Sources */,
+				49F39F5C25CADC9E003F5A4A /* WidgetPreviewView.swift in Sources */,
 				49E5CB6B25CA642800C6F054 /* ContentView.swift in Sources */,
 				49E5CB6925CA642800C6F054 /* DeviceInfoApp.swift in Sources */,
+				49E5CBBB25CA768100C6F054 /* DateBatteryData.swift in Sources */,
+				49ABA79A25CAA3F400AF52C2 /* TimeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E5CB7825CA645B00C6F054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49ABA78325CA983D00AF52C2 /* DateBatteryView.swift in Sources */,
+				49ABA79B25CAA3F400AF52C2 /* TimeView.swift in Sources */,
+				49F39F6825CB084B003F5A4A /* BatteryService.swift in Sources */,
+				49ABA7A025CAA47900AF52C2 /* VTimeView.swift in Sources */,
+				49F39F5325CAD447003F5A4A /* BlueDateBatteryWidget.swift in Sources */,
+				49E5CBA825CA678300C6F054 /* ColorfulDateBatteryWidget.swift in Sources */,
+				49E5CBA325CA677E00C6F054 /* DateBatteryWidgetView.swift in Sources */,
+				49ABA78D25CA9AFD00AF52C2 /* Battery.swift in Sources */,
+				49F39F4D25CAD396003F5A4A /* DateBatteryProvider.swift in Sources */,
+				49E5CB8425CA645B00C6F054 /* Widgets.swift in Sources */,
+				49E5CBBE25CA768100C6F054 /* DateBatteryData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49E5CB8925CA645C00C6F054 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49E5CB7B25CA645B00C6F054 /* WidgetsExtension */;
+			targetProxy = 49E5CB8825CA645C00C6F054 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		49E5CB7225CA642900C6F054 /* Debug */ = {
@@ -197,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -265,8 +464,10 @@
 		49E5CB7525CA642900C6F054 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DeviceInfo/Preview Content\"";
 				DEVELOPMENT_TEAM = RSA6B5TSXV;
@@ -279,6 +480,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sirosh.ilya.DeviceInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,8 +489,10 @@
 		49E5CB7625CA642900C6F054 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DeviceInfo/Preview Content\"";
 				DEVELOPMENT_TEAM = RSA6B5TSXV;
@@ -301,6 +505,53 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sirosh.ilya.DeviceInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49E5CB8C25CA645C00C6F054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RSA6B5TSXV;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sirosh.ilya.DeviceInfo.Widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49E5CB8D25CA645C00C6F054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RSA6B5TSXV;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sirosh.ilya.DeviceInfo.Widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,6 +574,15 @@
 			buildConfigurations = (
 				49E5CB7525CA642900C6F054 /* Debug */,
 				49E5CB7625CA642900C6F054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49E5CB8B25CA645C00C6F054 /* Build configuration list for PBXNativeTarget "WidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E5CB8C25CA645C00C6F054 /* Debug */,
+				49E5CB8D25CA645C00C6F054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
