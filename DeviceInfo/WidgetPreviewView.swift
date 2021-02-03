@@ -28,18 +28,18 @@ struct WidgetPreviewView<Content: View>: View {
     }
     
     private static func frame(for size: CGSize, family: WidgetFamily) -> CGSize {
-        let padding:CGFloat = 15
+        let padding:CGFloat = 20
         let width = size.width - 2*padding
         
         switch family {
         case .systemSmall:
-            return CGSize(width: width / 2, height: width / 2)
+            return CGSize(width: width/2, height: width/2)
         case .systemMedium:
-            return CGSize(width: width, height: width / 2)
+            return CGSize(width: width, height: width/2)
         case .systemLarge:
             return CGSize(width: width, height: width)
         @unknown default:
-            return CGSize(width: width / 2, height: width / 2)
+            return CGSize(width: width/2, height: width/2)
         }
     }
     

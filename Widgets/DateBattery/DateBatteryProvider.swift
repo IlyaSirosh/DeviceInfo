@@ -42,7 +42,7 @@ struct DateBatteryProvider: TimelineProvider {
         completion(timeline)
     }
     
-    private func createEntry(for date: Date = Date(), batteryLevel: Float? = nil) -> DateBatteryEntry {
+    private func createEntry(for date: Date = Date(), batteryLevel: Int? = nil) -> DateBatteryEntry {
         let currentLevel = batteryLevel ?? batteryService.currentLevel
         let info = DateBatteryData(date: date, batteryLevel: currentLevel)
         return DateBatteryEntry(date: Date(), info: info)

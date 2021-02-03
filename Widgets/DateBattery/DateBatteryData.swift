@@ -9,5 +9,7 @@ import Foundation
 
 struct DateBatteryData {
     let date: Date
-    let batteryLevel: Float
+    let batteryLevel: Int
+    
+    static let example = DateBatteryData(date: Date(), batteryLevel: 73)
 }

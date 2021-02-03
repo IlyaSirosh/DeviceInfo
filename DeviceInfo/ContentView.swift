@@ -9,10 +9,7 @@ import SwiftUI
 import WidgetKit
 
 struct ContentView: View {
-    let placeholderData: DateBatteryData
-    init() {
-        placeholderData = DateBatteryData(date: Date(), batteryLevel: 0.73)
-    }
+    let placeholderData: DateBatteryData = .example
     
     var body: some View {
         GeometryReader { geometry in

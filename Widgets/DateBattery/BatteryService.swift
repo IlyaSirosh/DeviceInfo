@@ -6,17 +6,14 @@
 //
 
 import UIKit
+import DeviceKit
 
 struct BatteryService {
     
-    init() {
-        UIDevice.current.isBatteryMonitoringEnabled = true
-    }
-
-    var currentLevel: Float {
-        let level = UIDevice.current.batteryLevel
-        return level > 0 ? level : levelPlaceholder
+    var currentLevel: Int {
+        let level = Device.current.batteryLevel
+        return  level ?? levelPlaceholder
     }
     
-    let levelPlaceholder: Float = 0
+    let levelPlaceholder: Int = 0
 }

@@ -10,8 +10,8 @@ import SwiftUI
 struct Battery: View {
     private let levelLabel: String
     
-    init(level: Float) {
-        self.levelLabel =  level != -1 ? "\(Int(100 * level))%" : "0%"
+    init(level: Int) {
+        self.levelLabel =  "\(level)%"
     }
     
     
@@ -35,7 +35,7 @@ struct Battery: View {
 
 struct Battery_Previews: PreviewProvider {
     static var previews: some View {
-        Battery(level: 0.2)
+        Battery(level: 20)
             .background(Color.blue)
     }
 }

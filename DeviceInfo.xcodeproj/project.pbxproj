@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,6 +35,7 @@
 		49F39F5825CAD9F2003F5A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E5CB8525CA645C00C6F054 /* Assets.xcassets */; };
 		49F39F5C25CADC9E003F5A4A /* WidgetPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F39F5B25CADC9E003F5A4A /* WidgetPreviewView.swift */; };
 		49F39F6825CB084B003F5A4A /* BatteryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F39F6725CB084B003F5A4A /* BatteryService.swift */; };
+		49F39F6D25CB2457003F5A4A /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 49F39F6C25CB2457003F5A4A /* DeviceKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 			files = (
 				49E5CB8125CA645B00C6F054 /* SwiftUI.framework in Frameworks */,
 				49E5CB7F25CA645B00C6F054 /* WidgetKit.framework in Frameworks */,
+				49F39F6D25CB2457003F5A4A /* DeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +239,9 @@
 			dependencies = (
 			);
 			name = WidgetsExtension;
+			packageProductDependencies = (
+				49F39F6C25CB2457003F5A4A /* DeviceKit */,
+			);
 			productName = WidgetsExtension;
 			productReference = 49E5CB7C25CA645B00C6F054 /* WidgetsExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -267,6 +272,9 @@
 				Base,
 			);
 			mainGroup = 49E5CB5C25CA642800C6F054;
+			packageReferences = (
+				49F39F6B25CB2457003F5A4A /* XCRemoteSwiftPackageReference "DeviceKit" */,
+			);
 			productRefGroup = 49E5CB6625CA642800C6F054 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		49F39F6B25CB2457003F5A4A /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devicekit/DeviceKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		49F39F6C25CB2457003F5A4A /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49F39F6B25CB2457003F5A4A /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 49E5CB5D25CA642800C6F054 /* Project object */;
 }
