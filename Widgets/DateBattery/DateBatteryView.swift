@@ -44,7 +44,7 @@ struct DateBatteryView: View {
                 Spacer()
                 HStack {
                     Text(labels.weekday)
-                        .font(.custom("Courgette-Regular", size: size.height / 6))
+                        .font(.custom("Courgette-Regular", size: size.height * 0.13))
                         .fontWeight(.light)
                     Spacer()
                 }
@@ -101,7 +101,7 @@ extension DateBatteryView {
             let day = components.day!
             let month = calendar.monthSymbols[components.month! - 1]
             self.date = "\(day) \(month)"
-            self.weekday = calendar.weekdaySymbols[day - 1]
+            self.weekday = calendar.weekdaySymbols[day]
         }
     }
 }
